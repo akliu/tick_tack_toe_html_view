@@ -10,10 +10,12 @@
     <!-- Whackjobs at GithubPages don't understand symlinks... -->
     <script src="../../ttt-core-solution/ttt-core.js"></script>
     <script id="view" src="../js/ttt-view.js"></script>
+    <h1 id="head">TIC TAC TOE</h1>
     <main id="view-container"></main>
     <script>
       var $container = $("#view-container");
       var $tttview = new window.TTT.View(new TTT.Game(), $container);
+      $container.on("click", $tttview.bindEvents.bind($tttview));
       // Write your code here.
     </script>
   </body>
