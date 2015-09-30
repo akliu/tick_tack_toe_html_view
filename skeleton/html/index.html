@@ -9,9 +9,11 @@
     <script src="../js/jquery-2.1.1.js"></script>
     <!-- Whackjobs at GithubPages don't understand symlinks... -->
     <script src="../../ttt-core-solution/ttt-core.js"></script>
-    <script src="../js/ttt-view.js"></script>
-
+    <script id="view" src="../js/ttt-view.js"></script>
+    <main id="view-container"></main>
     <script>
+      var $container = $("#view-container");
+      var $tttview = new window.TTT.View(new TTT.Game(), $container);
       // Write your code here.
     </script>
   </body>

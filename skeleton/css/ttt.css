@@ -1,0 +1,25 @@
+#view-container ul{
+  padding: 0;
+  width: 300px;
+  list-style-type: none;
+  border: 2px solid black;
+}
+
+#view-container li{
+  float: left;
+  width: 76px;
+  height: 76px;
+  border: 2px solid black;
+  background: gray;
+  padding: 10px;
+}
+
+#view-container ul:after {
+  content: "";
+  clear:both;
+  display: block;
+}
+
+#view-container li:hover{
+  background: yellow
+}
